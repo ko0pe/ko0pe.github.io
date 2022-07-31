@@ -1,0 +1,382 @@
+
+@charset "UTF-8";
+
+/* 共通部分
+------------------------------- */
+html {
+    font-size: 100%;
+}
+body{
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    line-height: 1.7;
+    background-color: #f5d0c7;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 10%;
+
+}
+
+/* HEADER
+------------------------------- */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+
+}
+.logo {
+    width: 300px;
+    margin-top: 5px;
+}
+.main-nav {
+    display: flex;
+    font-size: 1.1rem;
+    text-transform: none;
+    margin-top: 34px;
+    list-style: none;
+    letter-spacing: 7px;
+    font-family: serif;
+    font-weight: bold;
+}
+.main-nav li {
+    margin-left: 36px;
+}
+.main-nav a {
+    color: #432;
+}
+.main-nav a:hover {
+    color: #0bd;
+}
+.dropdown__lists {
+    display: none;/*デフォルトでは非表示の状態にしておく*/
+    width: 100%;
+    position: relative;
+    top: 2px;
+    left: 100;
+}
+.menu-nav:hover .dropdown__lists {
+    display: block;/*Gナビメニューにホバーしたら表示*/
+}
+.dropdown__list {
+    background-color: none;
+    top: 10px;
+    height: 30px;
+    transition: all .3s;
+    position: relative;
+}
+.dropdown__list:not(:first-child)::before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #3492d1;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.dropdown__list a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+}
+.dropdown__lists li{
+    list-style: none;
+}
+/*
+---------------------------------------------------------------------------------------------------- */
+/* Body_Home
+------------------------------- */
+.home-content {
+    position: absolute;
+    top: 190px;
+    width:  100%;
+    height:  50%;
+}
+.home-content img {
+    border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+    width:  430px;       /* ※縦横を同値に */
+    height: 400px;       /* ※縦横を同値に */
+    position: relative;
+    top: -20px;
+    left: 120px;
+}
+.home-content h2 {
+    font-size:6rem;
+    position: relative;
+    top: -400px;
+    left: 600px;
+    font-family: serif;
+    width:  300px;
+
+}
+.home-content p {
+    font-size: 4rem;
+    margin: 170px 0 43px;
+    padding: 10px;
+    font-family: serif; 
+    position: relative;
+    top: -600px;
+    left: 600px;
+    width: 500px;
+}
+.button1{
+    font-family: serif;
+    font-size: 30px;
+    background: rgb(194, 33, 87);
+    color: #fff;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 300px;
+    left: 700px;
+    text-align: center;
+}
+.button1:hover {
+    background: rgb(90, 16, 40);
+}
+.button1 a{
+    color: #fff;
+    position: relative;
+    top: 50px;
+    left: 0px;
+
+}
+.button2{
+    font-family: serif;
+    font-size: 30px;
+    background: rgb(2, 98, 161);
+    color: #fff;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 150px;
+    left: 900px;
+    text-align: center;
+}
+.button2:hover {
+    background: rgb(1, 48, 80);
+}
+.button2 a{
+    color: #fff;
+    position: relative;
+    top: 50px;
+    left: 0px;
+}
+.button3{
+    font-family: serif;
+    font-size: 30px;
+    background: rgb(71, 145, 2);
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 0px;
+    left: 1100px;
+    text-align: center;
+}
+.button3:hover {
+    background: rgb(40, 82, 1);
+}
+.button3 a{
+    color: #fff;
+    position: relative;
+    top: 50px;
+    left: 0px;
+}
+.explanation{
+    height:250px;
+}
+.explanation h4{
+    font-family: serif;
+    position: relative;
+    top: 0px;
+    left: 350px;
+    width:  800px;
+    padding: 45px 0;
+}
+/*
+---------------------------------------------------------------------------------------------------- */
+/* Body_Profile
+------------------------------- */
+.prof_home .prof_top {
+    width:  300px;       /* ※縦横を同値に */
+    height: 200px;       /* ※縦横を同値に */
+    position: relative;
+    top: 0px;
+    left: 550px;
+
+}
+.prof_home table{
+    margin: 30px 400px;
+}
+.home_top a{
+    padding-left: 10px;
+}
+/*
+---------------------------------------------------------------------------------------------------- */
+/* Body_Career
+------------------------------- */
+.career_contents{
+    display:flex ;
+    justify-content: center;
+}
+.career_contents ul{
+    margin-top: 30px;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.career1 {
+    width:  850px;       /* ※縦横を同値に */
+    height: 500px;       /* ※縦横を同値に */
+}
+.home_career1 p{
+    padding-top: 20px;
+    text-align: center;
+}
+.career2 {
+    width:  850px;       /* ※縦横を同値に */
+    height: 500px;       /* ※縦横を同値に */
+}
+.home_career2 p{
+    text-align: center;
+}
+.career3 {
+    width:  850px;       /* ※縦横を同値に */
+    height: 500px;       /* ※縦横を同値に */
+}
+.home_career3 p{
+    text-align: center;
+}
+.career4 {
+    width:  850px;       /* ※縦横を同値に */
+    height: 500px;       /* ※縦横を同値に */
+}
+.home_career4 p{
+    text-align: center;
+}
+.career5 {
+    width:  850px;       /* ※縦横を同値に */
+    height: 500px;       /* ※縦横を同値に */
+}
+.home_career5 p{
+    text-align: center;
+}
+.career6 {
+    width:  850px;       /* ※縦横を同値に */
+    height: 500px;       /* ※縦横を同値に */
+}
+.home_career6 p{
+    text-align: center;
+}
+/*
+---------------------------------------------------------------------------------------------------- */
+/* Body_Hobby
+------------------------------- */
+.flex{
+    display: flex;
+    align-items: top;
+    margin: 50px 30px 10px 30px;
+}
+/*
+-------img-------
+*/
+/*tennis*/
+.hobby .hobby_tennis_img{
+    width:  450px;
+    height: 280px;
+    position: relative;
+    left:200px;
+}
+/*sing*/
+.hobby .hobby_sing_img{
+    width:  450px;
+    height: 280px;
+    position: relative;
+    left:150px;
+}
+/*gym*/
+.hobby .hobby_gym_img{
+    width:  450px;
+    height: 280px;
+    position: relative;
+    left:200px;
+}
+/*dog*/
+.hobby .hobby_dog_img{
+    width:  450px;
+    height: 330px;
+    position: relative;
+    left:260px;
+}
+/*sauna*/
+.hobby .hobby_sauna_img{
+    width:  450px;
+    height: 280px;
+    position: relative;
+    left:200px;
+}
+
+/*
+-------title-------
+*/
+.flex .title_right{
+    position: relative;
+    left:300px;
+}
+.flex .title_left{
+    position: relative;
+    left:180px;
+}
+/*
+-------text-------
+*/
+.hobby .text_right{
+    margin-left: 50px;
+    position: relative;
+    left:150px;
+}
+.hobby .text_left{
+    margin-left: 50px;
+    position: relative;
+    left:100px;
+}
+
+/* Footer
+------------------------------- */
+/*=========== footer index ================*/
+
+.fotter_items{
+    width: 100%;
+    height: 150px;
+    background: rgb(0, 2, 109);
+    padding: 20px 205px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    text-align: center;
+}
+.css_index_{
+    position: relative;
+
+}
+.item img{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    position: relative;
+    top: -10px;
+    right: 0px
+}
